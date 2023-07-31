@@ -4,7 +4,7 @@ echo "America/Sao_Paulo" > /etc/timezone
 ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime > /dev/null 2>&1
 dpkg-reconfigure --frontend noninteractive tzdata > /dev/null 2>&1
 clear
-figlet 'SCOTT-PRO' | lolcat
+figlet 'MEGASSH' | lolcat
 echo -e "\E[44;1;37m    INSTALAR CHECKUSER ANYVPN     \E[0m" 
 echo ""
 echo ""
@@ -16,15 +16,15 @@ pip3 install flask > /dev/null 2>&1
 rm /bin/chany > /dev/null 2>&1
 sleep 5
 cd /bin || exit
-wget https://raw.githubusercontent.com/ScottBrabo/checkany/main/chany > /dev/null 2>&1
-wget https://raw.githubusercontent.com/ScottBrabo/checkany/main/userscheck > /dev/null 2>&1
+wget https://raw.githubusercontent.com/RPful/checkany/main/chany > /dev/null 2>&1
+wget https://raw.githubusercontent.com/RPful/checkany/main/userscheck > /dev/null 2>&1
 chmod 777 chany > /dev/null 2>&1
 chmod 777 userscheck > /dev/null 2>&1
 clear
 mkdir /usr/lib/checkany > /dev/null 2>&1
 cd /usr/lib/checkany || exit
 rm checkany.py > /dev/null 2>&1
-wget https://raw.githubusercontent.com/ScottBrabo/checkany/main/checkany.py > /dev/null 2>&1
+wget https://raw.githubusercontent.com/RPful/checkany/main/checkany.py > /dev/null 2>&1
 chmod 777 checkany.py > /dev/null 2>&1
 clear
 figlet 'SCOTT-PRO' | lolcat
